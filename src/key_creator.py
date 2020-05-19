@@ -6,7 +6,7 @@ cwd = os.getcwd()
 
 python_exe = sys.executable
 
-key_path = r"Directory\\Background\\shell\\PythonTestingKey1"
+key_path = r"Directory\\Background\\shell\\GoodUnzipKey"
 
 key = reg.CreateKey(reg.HKEY_CLASSES_ROOT, key_path)
 
