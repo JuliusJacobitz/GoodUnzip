@@ -29,7 +29,7 @@ for entry in os.scandir():
                 new_wd = cwd + r"\{0}".format(file_name)
                 print("> created folder: {0}".format(new_wd))
             except Exception as e:
-                print(e)
+                #print(e)
                 createBackup(1)
 
             try:
