@@ -1,6 +1,6 @@
-# GoodUnzip
-Fast, Easy and wip  
-works on win 10 .. 
+# GoodUnzip  
+Fast, easy and w.i.p. unzipping tool  
+works on win 10 ..  
 
 
 # Setup  
