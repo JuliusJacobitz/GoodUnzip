@@ -40,5 +40,5 @@ for entry in os.scandir():
                 print(e)
                 # später vlt ja gibt den namen schon haben backup gemacht
 
-print("done!")
+print("> done!")
 sleep(0.3)
