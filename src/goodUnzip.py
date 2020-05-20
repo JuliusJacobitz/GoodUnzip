@@ -20,11 +20,11 @@ def createBackup(c):
 
 for entry in os.scandir():
     if not entry.is_dir():
-        if file_format in formats:
-            file_path = Path(entry.name)
-            file_name, file_format = os.path.splitext(str(file_path))
-            whole_path = cwd + r"\{0}".format(file_path)
+        file_path = Path(entry.name)
+        file_name, file_format = os.path.splitext(str(file_path))
+        whole_path = cwd + r"\{0}".format(file_path)
         
+        if file_format in formats:
             try:
                 os.mkdir(cwd + r"\{0}".format(file_name))
                 new_wd = cwd + r"\{0}".format(file_name)
