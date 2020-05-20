@@ -17,7 +17,6 @@ def createBackup(c):
     except:
         createBackup(c+1)
 
-
 for entry in os.scandir():
     if not entry.is_dir():
         file_path = Path(entry.name)
@@ -30,7 +29,6 @@ for entry in os.scandir():
                 new_wd = cwd + r"\{0}".format(file_name)
                 print("> created folder: {0}".format(new_wd))
             except Exception as e:
-                #print(e)
                 createBackup(1)
 
             try:
@@ -39,16 +37,18 @@ for entry in os.scandir():
                 print("> transfer completed")
 
                 try:
-                    checker = input(r"Delete Zip? Insert 'n' for no: ")
+                    checker = input(r"> Delete Zip? Insert 'n' for no: ")
                     if checker != "n":
                         os.remove(whole_path)
                         print("> removed zip folder: {0}".format(file_path))
+
                 except Exception as e:
                     print(e)
-                    # error handling 
+                    # error handling
+                print("\n")
             except Exception as e:
                     print(e)
                     # error handling
 
 print("> done!")
-sleep(0.2)
+sleep(0.1)
