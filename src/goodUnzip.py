@@ -87,4 +87,4 @@ for entry in os.scandir():
                 # error handling
 
 print("> done!")
-sleep(1000)
+sleep(0)
