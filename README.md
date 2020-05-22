@@ -4,5 +4,5 @@ works on win 10 ..
 
 
 # Setup  
-Run keycreator.py  
+Run keycreator.py as admin  
 Then find "Good Unzip!" in your context menu (right mousebutton on desktop)
