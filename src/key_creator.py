@@ -13,7 +13,7 @@ key = reg.CreateKey(reg.HKEY_CLASSES_ROOT, key_path)
 reg.SetValue(key, '', reg.REG_SZ, '&Good Unzip!')
 
 key1 = reg.CreateKey(key, r"command")
-reg.SetValue(key1, '', reg.REG_SZ, python_exe + ' "' + cwd + r"\goodUnzip.py" + '"')     # important str has to look like: ...python.exe "..src/test.py"
+reg.SetValue(key1, '', reg.REG_SZ, python_exe + ' "' + cwd + r"\goodUnzip_02.py" + '"')     # important str has to look like: ...python.exe "..src/test.py"
 
 
 #print(python_exe + ' "'+cwd+r"\testKey.py"+'"')
