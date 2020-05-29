@@ -9,5 +9,5 @@ Then find "Good Unzip!" in your context menu (right mousebutton on desktop)
 
 
 # Info  
-actual version: GoodUnzip_02
+actual version: GoodUnzip_02  
 Python3 required  
