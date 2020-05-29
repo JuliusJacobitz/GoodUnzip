@@ -50,6 +50,33 @@ def createBackup(c, file_n, cwd):
     except:
         createBackup(c + 1, file_n, cwd)
 
+def searchZip(entry):
+    path = Path(entry)
+    for i in os.scandir(path):
+        if i.is_dir():
+            searchZip(i)
+        else:
+            filepath = Path(i)
+            wholefilename = Path(i.name)
+            file_name,file_format = os.path.splitext(str(wholefilename))
+            if file_format in formats:
+                #unzip2(i)
+                print("found zip would unzip it !!")
+                pass
+
+def unzip2(entry,delcheck=False):   #filepath muss vom typen Path sein, dir auch
+    try:
+        filepath = Path(entry)
+        filedir = os.path.abspath(filepath)
+        whole_file_name = Path(entry.name)
+        file_name, file_format = os.path.splitext(str(whole_file_name))
+
+
+    except Exception as e:
+        print(e)
+
+
+
 def unzip(scandir, cwd, delcheck=False):
     global new_wd
     if type(scandir) == str:
@@ -124,3 +151,17 @@ except Exception as e:
     print(e)
     sleep(100)
 print("> done!")
+
+
+"""
+#new structure: 
+
+execute script in a folder 
+
+search through folder if folder is found get into it search for folder in it 
+if zip is found: unzip it 
+
+problem, what if unzipped data contains zip
+
+
+"""
