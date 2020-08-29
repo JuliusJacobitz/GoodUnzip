@@ -1,1 +1,1 @@
-{"folders_deleted": 0, "data_unzipped": 0}
+{"folders_deleted": 37, "data_unzipped": 37}
